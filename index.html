@@ -3,410 +3,112 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BEAST ROOT — Premium Sports Nutrition | Lab Tested | Trusted Quality</title>
-  <meta name="description" content="BEAST ROOT — Premium Sports Nutrition. Lab Tested, FSSAI Certified, Fast Delivery. Trusted by serious athletes." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>BEAST ROOT — Premium Sports Nutrition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0b0b0d;
-      --card:#121216;
-      --muted:#9aa0a6;
-      --text:#ffffff;
-      --accent:#00e07b;
-      --accent-2:#ff3b3b;
-      --brand:#00c2ff;
-      --border:#1e1f25;
-      --gold:#f5c451;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
-    a{color:inherit;text-decoration:none}
+    /* --- CSS same as before --- */
+    body{margin:0;font-family:Inter;background:#0b0b0d;color:#fff}
+    a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
-    .container{max-width:1200px;margin:0 auto;padding:0 20px}
-    header{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter:saturate(180%) blur(8px);
-      background:linear-gradient(180deg,rgba(11,11,13,.9),rgba(11,11,13,.6));
-      border-bottom:1px solid var(--border);
-    }
-    .nav{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:14px 0;
-    }
-    .brand{
-      display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px
-    }
-    .brand .logo{
-      width:36px;height:36px;border-radius:8px;
-      background:linear-gradient(135deg,var(--brand),#7a5cff);
-      display:grid;place-items:center;font-weight:800;color:#0b0b0d
-    }
-    .menu{display:flex;gap:18px;align-items:center}
-    .menu a{padding:8px 10px;border-radius:8px;color:var(--muted)}
-    .menu a.active,.menu a:hover{color:var(--text);background:rgba(255,255,255,.06)}
-    .cta-row{display:flex;gap:10px}
-    .btn{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:10px 14px;border-radius:10px;border:1px solid var(--border);
-      background:var(--card);color:var(--text);font-weight:600
-    }
-    .btn.accent{background:var(--accent);color:#0b0b0d;border-color:transparent}
-    .btn.whatsapp{background:#25D366;color:#0b0b0d;border-color:transparent}
-    .hero{
-      padding:40px 0 24px;border-bottom:1px solid var(--border);
-      background:
-        radial-gradient(1200px 400px at 50% -100px, rgba(0,194,255,.15), transparent 60%),
-        radial-gradient(800px 300px at 10% -50px, rgba(0,224,123,.12), transparent 60%);
-    }
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
-    .hero h1{font-size:clamp(28px,4vw,40px);margin:0 0 10px}
-    .hero p{color:var(--muted);margin:0 0 18px}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
-    .badge{
-      padding:8px 12px;border:1px solid var(--border);border-radius:999px;
-      background:rgba(255,255,255,.04);color:#cfd3d7;font-weight:600;font-size:14px
-    }
-    .hero-card{
-      background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
-      border:1px solid var(--border);border-radius:16px;padding:16px
-    }
-    .hero-card .stack{display:grid;gap:10px}
-    .section{padding:28px 0}
-    .section h2{font-size:clamp(22px,3vw,28px);margin:0 0 8px}
-    .section p.lead{color:var(--muted);margin:0 0 18px}
-    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .why-card{
-      background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px
-    }
-    .why-card h4{margin:0 0 6px;font-size:16px}
-    .why-card p{margin:0;color:#cfd3d7;font-size:14px}
-    .products{padding:10px 0 30px}
-    .toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .card{
-      background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column
-    }
-    .card .tagbar{display:flex;gap:8px;padding:10px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.03)}
-    .tag{font-size:12px;font-weight:800;padding:6px 8px;border-radius:999px}
-    .tag.red{background:rgba(255,59,59,.15);color:#ffb3b3;border:1px solid rgba(255,59,59,.35)}
-    .tag.gold{background:rgba(245,196,81,.15);color:#f9e3b0;border:1px solid rgba(245,196,81,.35)}
-    .media{height:140px;background:linear-gradient(135deg,#1a1b22,#0f1015);display:grid;place-items:center;color:#cfd3d7;font-weight:700}
-    .content{padding:12px;display:grid;gap:8px}
-    .content h3{margin:0;font-size:16px}
-    .content p{margin:0;color:#cfd3d7;font-size:14px;line-height:1.4}
-    .price{display:flex;align-items:center;gap:8px;font-weight:800}
-    .price .mrp{text-decoration:line-through;color:#9aa0a6}
-    .price .sale{color:#9ff7c8}
-    .qty{display:flex;align-items:center;gap:8px}
-    .qty button{
-      width:30px;height:30px;border-radius:8px;border:1px solid var(--border);
-      background:rgba(255,255,255,.06);color:#fff;font-weight:800;cursor:pointer
-    }
+    .container{max-width:1200px;margin:auto;padding:0 20px}
+    header{background:#121216;position:sticky;top:0;z-index:50;padding:10px 0;border-bottom:1px solid #1e1f25}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .menu{display:flex;gap:20px}
+    .menu a{color:#9aa0a6}
+    .menu a:hover{color:#fff}
+    .btn{padding:8px 12px;border-radius:6px;background:#00e07b;color:#000;font-weight:600}
+    .hero{padding:40px 0;border-bottom:1px solid #1e1f25}
+    .hero h1{font-size:32px;margin:0 0 10px}
+    .hero p{color:#9aa0a6}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin:20px 0}
+    .card{background:#121216;border:1px solid #1e1f25;border-radius:10px;overflow:hidden}
+    .card img{height:180px;object-fit:cover}
+    .card .content{padding:12px}
+    .card h3{margin:0 0 6px;font-size:16px}
+    .card p{color:#cfd3d7;font-size:14px}
+    .price{font-weight:700;margin:8px 0}
+    .mrp{text-decoration:line-through;color:#9aa0a6;margin-right:8px}
+    .sale{color:#9ff7c8}
+    .qty{display:flex;gap:8px;align-items:center}
+    .qty button{width:28px;height:28px;border:none;background:#333;color:#fff;font-weight:700;border-radius:6px}
     .actions{display:flex;gap:8px;margin-top:8px}
-    .btn.small{padding:8px 10px;font-size:14px}
-    .btn.order{background:linear-gradient(135deg,var(--accent),#b7ffcf);color:#0b0b0d;border-color:transparent}
-    .certs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-    .cert-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
-    .cert-card h3{margin:0 0 6px}
-    .cert-list{display:grid;gap:8px;color:#cfd3d7}
-    .downloads{display:flex;gap:10px;margin-top:10px}
-    .footer{
-      border-top:1px solid var(--border);padding:20px 0;margin-top:20px;background:linear-gradient(180deg,rgba(255,255,255,.03),transparent)
-    }
-    .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
-    .contact-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
-    .contact-card h3{margin:0 0 8px}
-    .contact p{margin:6px 0;color:#cfd3d7}
-    .wh-row{display:flex;gap:10px;align-items:center;margin-top:8px}
-    .copyright{color:#9aa0a6;margin-top:10px}
-    /* Responsive */
-    @media (max-width:1024px){ .grid{grid-template-columns:repeat(3,1fr)} .hero-grid{grid-template-columns:1fr} .why-grid{grid-template-columns:repeat(2,1fr)} .certs{grid-template-columns:1fr} .contact{grid-template-columns:1fr} }
-    @media (max-width:640px){ .grid{grid-template-columns:repeat(2,1fr)} .menu{display:none} .cta-row{display:none} .brand .logo{width:32px;height:32px} .hero{padding:26px 0} }
+    footer{border-top:1px solid #1e1f25;padding:20px 0;text-align:center;color:#9aa0a6}
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header id="top">
-    <div class="container nav">
-      <div class="brand">
-        <div class="logo">BR</div>
-        <div>
-          <div style="font-size:14px;color:var(--muted);font-weight:700;letter-spacing:.2px">BEAST ROOT</div>
-          <div style="font-size:12px;color:#cfd3d7">Premium Sports Nutrition</div>
-        </div>
-      </div>
-      <nav class="menu">
-        <a href="#products" class="active">Products</a>
-        <a href="#certs">Certifications</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="cta-row">
-        <a class="btn" href="#products">Shop Supplements</a>
-        <a class="btn whatsapp" href="https://wa.me/916266403420?text=Hi%20Beast%20Root%2C%20I%20want%20to%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
-      </div>
-    </div>
-  </header>
+<header>
+  <div class="container nav">
+    <div><strong>BEAST ROOT</strong></div>
+    <nav class="menu">
+      <a href="#products">Products</a>
+      <a href="#certs">Certifications</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="https://wa.me/916266403420?text=Hi%20Beast%20Root%2C%20I%20want%20to%20order" target="_blank">Order on WhatsApp</a>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Premium Sports Nutrition — Lab Tested — Trusted Quality</h1>
-        <p>Fast Delivery • Lab Tested • FSSAI Certified • Preferred by serious athletes</p>
-        <div class="badges">
-          <span class="badge">Fast Delivery</span>
-          <span class="badge">Lab Tested</span>
-          <span class="badge">FSSAI Certified</span>
-        </div>
-        <div class="cta-row">
-          <a class="btn accent" href="#products">Shop Supplements</a>
-          <a class="btn whatsapp" href="https://wa.me/916266403420?text=Hi%20Beast%20Root%2C%20I%20want%20to%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="stack">
-          <div style="font-weight:800">Why Beast Root?</div>
-          <div class="why-grid">
-            <div class="why-card"><h4>100% Authentic</h4><p>Genuine products with zero compromise on quality</p></div>
-            <div class="why-card"><h4>Lab Tested</h4><p>Third‑party verified for purity and potency</p></div>
-            <div class="why-card"><h4>Fast Dispatch</h4><p>All‑India delivery with secure packaging</p></div>
-            <div class="why-card"><h4>Premium Raw Materials</h4><p>Finest ingredients for maximum results</p></div>
-            <div class="why-card"><h4>Trusted by Athletes</h4><p>Preferred choice of fitness professionals</p></div>
-            <div class="why-card"><h4>FSSAI Certified</h4><p>Compliant with food safety standards</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="hero container">
+  <h1>Premium Sports Nutrition — Lab Tested — Trusted Quality</h1>
+  <p>Fast Delivery • Lab Tested • FSSAI Certified</p>
+</section>
 
-  <!-- Products -->
-  <section id="products" class="container products">
-    <div class="toolbar">
-      <div>
-        <h2>Our Premium Range</h2>
-        <p class="lead">Lab‑tested supplements for your fitness journey</p>
+<section id="products" class="container">
+  <h2>Our Premium Range</h2>
+  <div class="grid">
+    <!-- Mass Gainer -->
+    <div class="card">
+      <img src="images/mass-gainer.jpg" alt="Mass Gainer">
+      <div class="content">
+        <h3>Beast Root Mass Gainer</h3>
+        <p>84g protein • 1110 calories • Extreme muscle growth</p>
+        <div class="price"><span class="mrp">₹4399</span><span class="sale">₹3079</span></div>
+        <div class="qty"><button class="dec">−</button><span class="count">1</span><button class="inc">+</button></div>
+        <div class="actions"><button class="btn add">Add to Cart</button><a class="btn order" target="_blank">ORDER NOW</a></div>
       </div>
     </div>
 
-    <div class="grid" id="product-grid">
-      <!-- Mass Gainer -->
-      <article class="card" data-sku="mass-gainer">
-        <div class="tagbar">
-          <span class="tag gold">BEST SELLER</span>
-          <span class="tag red">30% OFF</span>
-        </div>
-        <div class="media">EXTREME MASS GAINER</div>
-        <div class="content">
-          <h3>Beast Root Mass Gainer</h3>
-          <p>Premium mass gainer with 84g protein and 1110 calories per serving. Engineered for extreme muscle growth and faster results.</p>
-          <div class="price"><span class="mrp">₹4399</span><span class="sale">₹3079</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Mass%20Gainer%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
+    <!-- Protein Isolate -->
+    <div class="card">
+      <img src="images/isolate.jpg" alt="Protein Isolate">
+      <div class="content">
+        <h3>Beast Root Protein Isolate</h3>
+        <p>30g protein • Fast absorbing whey isolate</p>
+        <div class="price"><span class="mrp">₹5500</span><span class="sale">₹3850</span></div>
+        <div class="qty"><button class="dec">−</button><span class="count">1</span><button class="inc">+</button></div>
+        <div class="actions"><button class="btn add">Add to Cart</button><a class="btn order" target="_blank">ORDER NOW</a></div>
+      </div>
+    </div>
 
-      <!-- Whey Isolate -->
-      <article class="card" data-sku="whey-isolate">
-        <div class="tagbar">
-          <span class="tag gold">BEST SELLER</span>
-          <span class="tag red">30% OFF</span>
-        </div>
-        <div class="media">PROTEIN ISOLATE</div>
-        <div class="content">
-          <h3>Beast Root Protein Isolate</h3>
-          <p>Premium whey isolate with 30g protein per serving. Pure, fast‑absorbing protein for maximum muscle growth and strength.</p>
-          <div class="price"><span class="mrp">₹5500</span><span class="sale">₹3850</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Protein%20Isolate%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
+    <!-- Pre-Workout -->
+    <div class="card">
+      <img src="images/pre-workout.jpg" alt="Pre-Workout">
+      <div class="content">
+        <h3>Beast Root Pre-Workout</h3>
+        <p>10g Citrulline • 4g Beta-Alanine • Explosive energy</p>
+        <div class="price"><span class="mrp">₹3000</span><span class="sale">₹2100</span></div>
+        <div class="qty"><button class="dec">−</button><span class="count">1</span><button class="inc">+</button></div>
+        <div class="actions"><button class="btn add">Add to Cart</button><a class="btn order" target="_blank">ORDER NOW</a></div>
+      </div>
+    </div>
 
-      <!-- Creatine -->
-      <article class="card" data-sku="creatine">
-        <div class="tagbar">
-          <span class="tag red">60% OFF</span>
-        </div>
-        <div class="media">HEAVY CREATINE</div>
-        <div class="content">
-          <h3>Beast Root Creatine</h3>
-          <p>Pure creatine monohydrate for explosive strength and power. 5g per serving to unleash maximum performance.</p>
-          <div class="price"><span class="mrp">₹1500</span><span class="sale">₹600</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Creatine%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
+    <!-- Creatine -->
+    <div class="card">
+      <img src="images/creatine.jpg" alt="Creatine">
+      <div class="content">
+        <h3>Beast Root Creatine</h3>
+        <p>5g pure creatine monohydrate per serving</p>
+        <div class="price"><span class="mrp">₹1500</span><span class="sale">₹600</span></div>
+        <div class="qty"><button class="dec">−</button><span class="count">1</span><button class="inc">+</button></div>
+        <div class="actions"><button class="btn add">Add to Cart</button><a class="btn order" target="_blank">ORDER NOW</a></div>
+      </div>
+    </div>
 
-      <!-- Multivitamin -->
-      <article class="card" data-sku="multivitamin">
-        <div class="tagbar">
-          <span class="tag red">60% OFF</span>
-        </div>
-        <div class="media">MULTI VITAMIN</div>
-        <div class="content">
-          <h3>Multivitamin</h3>
-          <p>Complete daily formula with essential vitamins and minerals. Boost immunity, energy, and overall health with 60 capsules.</p>
-          <div class="price"><span class="mrp">₹800</span><span class="sale">₹320</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Multivitamin%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Omega 3 -->
-      <article class="card" data-sku="omega-3">
-        <div class="tagbar">
-          <span class="tag red">60% OFF</span>
-        </div>
-        <div class="media">OMEGA 3</div>
-        <div class="content">
-          <h3>Omega 3</h3>
-          <p>High potency fish oil for heart and joint health. Premium omega‑3 fatty acids with 90 softgels for optimal wellness.</p>
-          <div class="price"><span class="mrp">₹800</span><span class="sale">₹320</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Omega%203%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Protein Oats -->
-      <article class="card" data-sku="protein-oats">
-        <div class="tagbar">
-          <span class="tag red">30% OFF</span>
-        </div>
-        <div class="media">PROTEIN OATS</div>
-        <div class="content">
-          <h3>Protein Oats</h3>
-          <p>High fiber, energy‑packed oats with 30g protein per serving. Perfect breakfast for sustained energy and muscle support.</p>
-          <div class="price"><span class="mrp">₹600</span><span class="sale">₹420</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Protein%20Oats%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Protein Muesli -->
-      <article class="card" data-sku="protein-muesli">
-        <div class="tagbar">
-          <span class="tag red">30% OFF</span>
-        </div>
-        <div class="media">PROTEIN MUESLI</div>
-        <div class="content">
-          <h3>Protein Muesli</h3>
-          <p>Crunchy whole‑grain muesli with 30g protein per serving. Delicious and nutritious breakfast for fitness enthusiasts.</p>
-          <div class="price"><span class="mrp">₹600</span><span class="sale">₹420</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Protein%20Muesli%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Pre-Workout -->
-      <article class="card" data-sku="pre-workout">
-        <div class="tagbar">
-          <span class="tag red">30% OFF</span>
-        </div>
-        <div class="media">EXTREME PRE‑WORKOUT</div>
-        <div class="content">
-          <h3>Beast Root Pre‑Workout</h3>
-          <p>Extreme pre‑workout with 10g citrulline and 4g beta‑alanine. Heavy dose explosive energy for maximum workout intensity.</p>
-          <div class="price"><span class="mrp">₹3000</span><span class="sale">₹2100</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Pre%20Workout%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Collagen Peptides -->
-      <article class="card" data-sku="collagen">
-        <div class="tagbar">
-          <span class="tag red">70% OFF</span>
-        </div>
-        <div class="media">COLLAGEN PEPTIDES</div>
-        <div class="content">
-          <h3>Collagen Peptides</h3>
-          <p>Premium collagen for youthful skin and joint support. Heavy glass bottle with premium embossed texture for luxury feel.</p>
-          <div class="price"><span class="mrp">₹1500</span><span class="sale">₹450</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Collagen%20Peptides%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Glutathione + Vit C -->
-      <article class="card" data-sku="glutathione-vitc">
-        <div class="tagbar">
-          <span class="tag red">30% OFF</span>
-        </div>
-        <div class="media">GLUTATHIONE + VIT C</div>
-        <div class="content">
-          <h3>Glutathione + Vit C</h3>
-          <p>Master antioxidant and brightening formula. Premium embossed texture with heavy glass for skin health and detoxification.</p>
-          <div class="price"><span class="mrp">₹1600</span><span class="sale">₹1120</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-            <button class="btn small add">Add to Cart</button>
-            <a class="btn small order" href="https://wa.me/916266403420?text=Order%3A%20Glutathione%20%2B%20Vit%20C%20x1" target="_blank" rel="noopener">ORDER NOW</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- BCAA -->
-      <article class="card" data-sku="bcaa">
-        <div class="tagbar">
-          <span class="tag red">30% OFF</span>
-        </div>
-        <div class="media">BCAA 2:1:1</div>
-        <div class="content">
-          <h3>BCAA</h3>
-          <p>Muscle recovery and endurance formula with 2:1:1 ratio. 30 servings of extreme performance support for intense training.</p>
-          <div class="price"><span class="mrp">₹2000</span><span class="sale">₹1400</span></div>
-          <div class="qty">
-            <button class="dec">−</button><span class="count">1</span><button class="inc">+</button>
-          </div>
-          <div class="actions">
-           
+    <!-- Multivitamin -->
+    <div class="card">
+      <img src="images/multivitamin.jpg" alt="Multivitamin">
+      <div class="content">
+        <h3>Multivitamin</h3>
+        <p>Complete daily formula • 60
