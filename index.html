@@ -3,90 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeastRoot | Premium Nutrition</title>
+    <title>Beast Root | Premium Sports Nutrition</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background: #050505;
-            color: #ffffff;
-            overflow-x: hidden;
-        }
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .purple-gradient {
-            background: linear-gradient(135deg, #6d28d9 0%, #db2777 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-gradient-glow {
-            background: radial-gradient(circle at 50% -20%, #4c1d95 0%, #050505 80%);
-        }
-        .btn-gradient {
-            background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .btn-gradient:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
-        }
+        body { background-color: #000000; color: #ffffff; font-family: sans-serif; }
+        .gold-text { color: #facc15; }
+        .gold-bg { background-color: #facc15; }
+        .card-bg { background-color: #0f0f0f; border: 1px solid #1f1f1f; }
+        .btn-outline { border: 1px solid #facc15; color: #facc15; }
+        .discount-tag { background-color: #fde047; color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
     </style>
 </head>
-<body class="bg-gradient-glow min-h-screen">
+<body>
 
-    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-        <div class="text-2xl font-extrabold tracking-tight">BEAST<span class="text-purple-500">ROOT</span></div>
-        <div class="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
-            <a href="#" class="hover:text-white transition">Products</a>
-            <a href="#" class="hover:text-white transition">About</a>
-            <a href="#" class="hover:text-white transition">Contact</a>
+    <nav class="flex justify-between items-center px-6 py-4 border-b border-zinc-800 sticky top-0 bg-black z-50">
+        <div class="text-xl font-bold tracking-widest">BEAST <span class="gold-text">ROOT</span></div>
+        <div class="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#">Products</a>
+            <a href="#">Certifications</a>
+            <a href="#">Why Us</a>
+            <a href="#">Contact</a>
         </div>
-        <button class="glass px-5 py-2 rounded-full text-sm font-semibold">Join Now</button>
+        <div class="flex items-center gap-4">
+            <i class="fa-solid fa-cart-shopping gold-text"></i>
+        </div>
     </nav>
 
-    <main class="flex flex-col items-center justify-center text-center px-6 pt-20 pb-32">
-        <div class="inline-block glass px-4 py-1.5 rounded-full text-xs font-bold tracking-widest text-purple-400 mb-6 uppercase">
-            The Future of Fitness
-        </div>
-        <h1 class="text-5xl md:text-8xl font-extrabold mb-6 tracking-tighter leading-none">
-            UNLEASH YOUR <br> <span class="purple-gradient">INNER BEAST</span>
-        </h1>
-        <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Premium quality supplements engineered for those who never settle. Elevate your performance with BeastRoot.
-        </p>
-        
-        <div class="flex flex-col md:flex-row gap-4 w-full max-w-md">
-            <input type="email" placeholder="Enter your email" class="glass bg-transparent flex-1 px-6 py-4 rounded-xl outline-none focus:ring-2 ring-purple-500 transition">
-            <button class="btn-gradient px-8 py-4 rounded-xl font-bold">Get Started</button>
-        </div>
-    </main>
-
-    <section class="max-w-7xl mx-auto px-8 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass p-8 rounded-3xl group">
-                <div class="w-12 h-12 bg-purple-600/20 rounded-xl mb-6 flex items-center justify-center text-purple-500 font-bold">01</div>
-                <h3 class="text-xl font-bold mb-3">Pure Isolate</h3>
-                <p class="text-zinc-500 text-sm">Fast-absorbing protein for maximum muscle recovery and growth.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl group border-purple-500/30">
-                <div class="w-12 h-12 bg-purple-600/20 rounded-xl mb-6 flex items-center justify-center text-purple-500 font-bold">02</div>
-                <h3 class="text-xl font-bold mb-3">Pre-Ignite</h3>
-                <p class="text-zinc-500 text-sm">Explosive energy and laser focus to crush every single workout session.</p>
-            </div>
-            <div class="glass p-8 rounded-3xl group">
-                <div class="w-12 h-12 bg-purple-600/20 rounded-xl mb-6 flex items-center justify-center text-purple-500 font-bold">03</div>
-                <h3 class="text-xl font-bold mb-3">Daily Vital</h3>
-                <p class="text-zinc-500 text-sm">Essential vitamins and minerals to keep your body at peak performance.</p>
-            </div>
+    <section class="text-center py-20 px-6">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter">BEAST <span class="gold-text">ROOT</span></h1>
+        <p class="text-zinc-400 text-lg mb-8">Premium Sports Nutrition | Lab Tested | Trusted Quality</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <button class="gold-bg text-black px-8 py-3 rounded-md font-bold uppercase text-sm">Shop Supplements</button>
+            <button class="btn-outline px-8 py-3 rounded-md font-bold uppercase text-sm">Order on WhatsApp</button>
         </div>
     </section>
 
-    <footer class="text-center py-10 border-t border-zinc-900 mt-20">
-        <p class="text-zinc-600 text-xs uppercase tracking-[0.2em]">© 2026 BEASTROOT PREMIUM NUTRITION</p>
+    <section class="grid grid-cols-2 md:grid-cols-3 gap-6 px-6 py-12 max-w-6xl mx-auto border-t border-zinc-800">
+        <div class="text-center p-4">
+            <i class="fa-solid fa-shield-halved gold-text text-3xl mb-3"></i>
+            <p class="text-xs uppercase tracking-widest font-bold">100% Authentic</p>
+        </div>
+        <div class="text-center p-4">
+            <i class="fa-solid fa-flask gold-text text-3xl mb-3"></i>
+            <p class="text-xs uppercase tracking-widest font-bold">Lab Tested</p>
+        </div>
+        <div class="text-center p-4">
+            <i class="fa-solid fa-truck-fast gold-text text-3xl mb-3"></i>
+            <p class="text-xs uppercase tracking-widest font-bold">Fast Delivery</p>
+        </div>
+    </section>
+
+    <section class="px-6 py-12 max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold mb-10 text-center uppercase tracking-widest">Our Premium Range</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="card-bg rounded-xl p-4 flex flex-col relative">
+                <div class="absolute top-4 right-4 discount-tag">30% OFF</div>
+                <img src="https://images.unsplash.com/photo-1593095191071-82b0cde44aa0?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
+                <h3 class="font-bold text-lg mb-1">Beast Root Mass Gainer</h3>
+                <p class="text-zinc-500 text-xs mb-4 line-clamp-2">84g protein and 1110 calories per serving.</p>
+                <div class="mt-auto">
+                    <div class="text-2xl font-bold gold-text mb-4">₹3,079</div>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
+                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-bg rounded-xl p-4 flex flex-col relative">
+                <div class="absolute top-4 right-4 discount-tag">30% OFF</div>
+                <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
+                <h3 class="font-bold text-lg mb-1">Protein Isolate</h3>
+                <p class="text-zinc-500 text-xs mb-4">30g protein per serving. Pure performance.</p>
+                <div class="mt-auto">
+                    <div class="text-2xl font-bold gold-text mb-4">₹3,850</div>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
+                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-bg rounded-xl p-4 flex flex-col relative">
+                <div class="absolute top-4 right-4 discount-tag">60% OFF</div>
+                <img src="https://images.unsplash.com/photo-1579722820308-d74e5719d23e?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
+                <h3 class="font-bold text-lg mb-1">Beast Root Creatine</h3>
+                <p class="text-zinc-500 text-xs mb-4">Pure monohydrate for explosive power.</p>
+                <div class="mt-auto">
+                    <div class="text-2xl font-bold gold-text mb-4">₹600</div>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
+                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-bg rounded-xl p-4 flex flex-col relative">
+                <div class="absolute top-4 right-4 discount-tag">30% OFF</div>
+                <img src="https://images.unsplash.com/photo-1620980536341-3b4737088b9c?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
+                <h3 class="font-bold text-lg mb-1">Beast Root Pre-Workout</h3>
+                <p class="text-zinc-500 text-xs mb-4">10g Citrulline for maximum pump.</p>
+                <div class="mt-auto">
+                    <div class="text-2xl font-bold gold-text mb-4">₹2,100</div>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
+                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-zinc-900/50 py-16 px-6 text-center">
+        <h2 class="text-2xl font-bold mb-4 uppercase">Get In Touch</h2>
+        <p class="text-zinc-400 mb-8">Chat with us for instant order placement and support.</p>
+        <a href="https://wa.me/916266403420" class="gold-bg text-black px-10 py-4 rounded-full font-bold inline-block">
+            <i class="fa-brands fa-whatsapp mr-2"></i> Chat on WhatsApp
+        </a>
+        <div class="mt-16 pt-8 border-t border-zinc-800 text-zinc-500 text-xs uppercase tracking-widest">
+            <p class="mb-2">Owner: Piyush Jain</p>
+            <p>WhatsApp: +91 6266403420</p>
+            <p class="mt-4">© 2026 BeastRoot | All Rights Reserved</p>
+        </div>
     </footer>
 
 </body>
