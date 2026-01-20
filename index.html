@@ -8,91 +8,121 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #050505; color: #fff; scroll-behavior: smooth; }
-        .ultra-glass { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(30px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 30px; }
-        .gold-text { background: linear-gradient(135deg, #facc15 0%, #eab308 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .gold-btn { background: linear-gradient(135deg, #facc15 0%, #eab308 100%); color: #000; font-weight: 800; transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .gold-btn:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(250, 204, 21, 0.4); }
-        .verify-badge { border: 2px solid #22c55e; box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #050505; color: #ffffff; overflow-x: hidden; }
+        
+        /* 🧊 Ultra-Premium Golden Glass */
+        .premium-card {
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(25px);
+            border: 1px solid rgba(250, 204, 21, 0.1);
+            border-radius: 30px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .premium-card:hover {
+            border-color: #facc15;
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(250, 204, 21, 0.1);
+        }
+
+        /* 🟡 Beast Gold Gradient */
+        .gold-text {
+            background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* 🛡️ Authenticity Shield Animation */
+        .verify-glow {
+            border: 2px solid #22c55e;
+            background: rgba(34, 197, 94, 0.05);
+            animation: pulse-green 2s infinite ease-in-out;
+        }
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 0 10px rgba(34, 197, 94, 0.2); }
+            50% { box-shadow: 0 0 30px rgba(34, 197, 94, 0.5); }
+        }
+
+        /* ⚡ Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #facc15; border-radius: 10px; }
     </style>
 </head>
 <body>
 
     <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center bg-black/40 backdrop-blur-xl border-b border-white/5">
         <div class="text-2xl font-black gold-text tracking-tighter italic uppercase">BEAST ROOT</div>
-        <div class="flex gap-4">
-            <a href="https://wa.me/916266403420" class="gold-btn px-6 py-2 rounded-full text-[9px] uppercase tracking-widest">Buy Now</a>
+        <div class="flex gap-4 items-center">
+            <a href="https://wa.me/916266403420" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-extrabold text-[10px] uppercase tracking-widest hover:scale-110 transition-all">Order Now</a>
         </div>
     </nav>
 
-    <section class="pt-44 pb-16 text-center px-6 bg-[radial-gradient(circle_at_center,_#1a1a00_0%,_#000_70%)]">
-        <div class="verify-badge inline-block px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.4em] mb-12 bg-green-500/5">
+    <section class="pt-44 pb-20 text-center px-6 bg-[radial-gradient(circle_at_center,_#1a1a00_0%,_#000_70%)]">
+        <div class="verify-glow inline-block px-10 py-4 rounded-full text-[10px] font-black uppercase tracking-[0.4em] mb-12">
             <i class="fa-solid fa-shield-check mr-2"></i> BeastRoot Authenticity Verified - 100% Genuine
         </div>
-        <h1 class="text-6xl md:text-9xl font-black mb-6 tracking-tighter uppercase italic leading-none">UNLEASH THE <span class="gold-text">BEAST</span></h1>
-        <p class="text-zinc-500 text-sm md:text-lg max-w-2xl mx-auto tracking-[0.3em] font-light">ELITE GRADE SPORTS NUTRITION | LAB TESTED</p>
-    </section>
-
-    <section class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="ultra-glass p-8 text-center hover:border-yellow-500/30 transition-all group">
-            <i class="fa-solid fa-award text-yellow-500 text-3xl mb-4 group-hover:scale-110 transition"></i>
-            <h3 class="text-[10px] font-bold uppercase tracking-widest">ISO Certified</h3>
-        </div>
-        <div class="ultra-glass p-8 text-center hover:border-yellow-500/30 transition-all group">
-            <i class="fa-solid fa-flask-vial text-yellow-500 text-3xl mb-4 group-hover:scale-110 transition"></i>
-            <h3 class="text-[10px] font-bold uppercase tracking-widest">Lab Tested</h3>
-        </div>
-        <div class="ultra-glass p-8 text-center hover:border-yellow-500/30 transition-all group">
-            <i class="fa-solid fa-shield-halved text-yellow-500 text-3xl mb-4 group-hover:scale-110 transition"></i>
-            <h3 class="text-[10px] font-bold uppercase tracking-widest">100% Authentic</h3>
-        </div>
-        <div class="ultra-glass p-8 text-center hover:border-yellow-500/30 transition-all group">
-            <i class="fa-solid fa-leaf text-yellow-500 text-3xl mb-4 group-hover:scale-110 transition"></i>
-            <h3 class="text-[10px] font-bold uppercase tracking-widest">Pure & Safe</h3>
+        <h1 class="text-6xl md:text-9xl font-black mb-6 tracking-tighter uppercase italic leading-none">
+            UNLEASH THE <br> <span class="gold-text">BEAST</span>
+        </h1>
+        <div class="flex flex-wrap justify-center gap-8 mt-16 opacity-60">
+            <div class="flex items-center gap-2"><i class="fa-solid fa-flask-vial text-yellow-500"></i> <span class="text-[9px] uppercase tracking-widest">Lab Tested</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-award text-yellow-500"></i> <span class="text-[9px] uppercase tracking-widest">ISO Certified</span></div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-truck-fast text-yellow-500"></i> <span class="text-[9px] uppercase tracking-widest">Fast Delivery</span></div>
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-black uppercase italic mb-16 gold-text border-l-4 border-yellow-500 pl-6">The Premium Collection</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section id="products" class="max-w-7xl mx-auto px-6 py-24">
+        <div class="flex justify-between items-end mb-20">
+            <div>
+                <h2 class="text-4xl font-black uppercase italic gold-text tracking-tighter">Elite Inventory</h2>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-[0.4em] mt-2">Curated Professional Supplements</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             
-            <div class="ultra-glass p-6 group transition-all duration-500 hover:border-yellow-500/40">
-                <span class="bg-yellow-400 text-black text-[9px] font-black px-3 py-1 rounded-full uppercase">30% OFF</span>
-                <img src="PASTE_MASS_GAINER_LINK" class="w-full h-64 object-contain my-6 transition-transform group-hover:scale-110">
-                <h3 class="font-extrabold text-xl mb-1 uppercase italic">Mass Gainer</h3>
-                <p class="text-zinc-500 text-[10px] mb-8 uppercase tracking-widest">Enhance Muscle | 1110 Calories</p>
-                <div class="flex justify-between items-center">
+            <div class="premium-card p-6 flex flex-col group">
+                <span class="bg-yellow-400 text-black text-[9px] font-black px-3 py-1 rounded-full w-fit mb-4 uppercase">30% OFF</span>
+                <img src="YOUR_UPLOADED_IMAGE" class="w-full h-64 object-contain mb-6 group-hover:scale-110 transition-all duration-700">
+                <h3 class="text-xl font-extrabold uppercase italic mb-2">Extreme Mass Gainer</h3>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-widest mb-6">High Calorie | 84g Protein</p>
+                <div class="mt-auto flex justify-between items-center border-t border-white/5 pt-6">
                     <div class="text-3xl font-black gold-text italic">₹3,079 <span class="text-zinc-800 text-xs line-through not-italic">₹4,399</span></div>
-                    <a href="https://wa.me/916266403420?text=I want to order BeastRoot Mass Gainer" class="p-3 bg-white/5 rounded-xl hover:bg-yellow-400 hover:text-black transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/916266403420" class="bg-white/5 p-4 rounded-2xl hover:bg-yellow-400 hover:text-black transition-all"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
 
-            <div class="ultra-glass p-6 group transition-all duration-500 hover:border-yellow-500/40">
-                <span class="bg-yellow-400 text-black text-[9px] font-black px-3 py-1 rounded-full uppercase">30% OFF</span>
-                <img src="PASTE_ISOLATE_LINK" class="w-full h-64 object-contain my-6 transition-transform group-hover:scale-110">
-                <h3 class="font-extrabold text-xl mb-1 uppercase italic">Protein Isolate</h3>
-                <p class="text-zinc-500 text-[10px] mb-8 uppercase tracking-widest">30g Protein | Fast Absorption</p>
-                <div class="flex justify-between items-center">
+            <div class="premium-card p-6 flex flex-col group">
+                <span class="bg-yellow-400 text-black text-[9px] font-black px-3 py-1 rounded-full w-fit mb-4 uppercase">30% OFF</span>
+                <img src="YOUR_UPLOADED_IMAGE" class="w-full h-64 object-contain mb-6">
+                <h3 class="text-xl font-extrabold uppercase italic mb-2">Protein Isolate</h3>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-widest mb-6">Fast Absorbing | 30g Protein</p>
+                <div class="mt-auto flex justify-between items-center pt-6 border-t border-white/5">
                     <div class="text-3xl font-black gold-text italic">₹3,850 <span class="text-zinc-800 text-xs line-through not-italic">₹5,500</span></div>
-                    <a href="https://wa.me/916266403420" class="p-3 bg-white/5 rounded-xl hover:bg-yellow-400 hover:text-black transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/916266403420" class="bg-white/5 p-4 rounded-2xl hover:bg-yellow-400 hover:text-black transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="premium-card p-6 flex flex-col group border-yellow-500/30">
+                <span class="bg-yellow-400 text-black text-[9px] font-black px-3 py-1 rounded-full w-fit mb-4 uppercase">60% OFF</span>
+                <img src="YOUR_UPLOADED_IMAGE" class="w-full h-64 object-contain mb-6">
+                <h3 class="text-xl font-extrabold uppercase italic gold-text mb-2 italic">Heavy Creatine</h3>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-widest mb-6">Pure Monohydrate | Max Power</p>
+                <div class="mt-auto flex justify-between items-center pt-6 border-t border-white/5">
+                    <div class="text-3xl font-black gold-text italic">₹600 <span class="text-zinc-800 text-xs line-through not-italic">₹1,500</span></div>
+                    <a href="https://wa.me/916266403420" class="bg-white/5 p-4 rounded-2xl hover:bg-yellow-400 hover:text-black transition-all"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
 
             </div>
     </section>
 
-    <footer class="py-24 px-6 border-t border-white/5 bg-zinc-950/50">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl font-black gold-text mb-6 italic uppercase">BeastRoot Indore</h2>
-            <p class="text-zinc-500 mb-12 max-w-md mx-auto">Premium Sports Nutrition curated by Piyush Jain for those who refuse to settle for average.</p>
-            <div class="flex justify-center gap-6 mb-12">
-                <i class="fa-brands fa-instagram text-2xl text-zinc-600 hover:text-yellow-500 cursor-pointer"></i>
-                <i class="fa-brands fa-facebook text-2xl text-zinc-600 hover:text-yellow-500 cursor-pointer"></i>
-                <i class="fa-solid fa-envelope text-2xl text-zinc-600 hover:text-yellow-500 cursor-pointer"></i>
-            </div>
-            <p class="text-[9px] text-zinc-700 uppercase tracking-[0.5em] italic">© 2026 BEAST ROOT | QUALITY WITHOUT COMPROMISE</p>
-        </div>
+    <footer class="py-32 px-6 border-t border-white/5 bg-zinc-950/50 text-center">
+        <h2 class="text-5xl font-black gold-text mb-6 italic uppercase tracking-tighter">BEAST ROOT</h2>
+        <p class="text-zinc-500 mb-12 max-w-lg mx-auto uppercase text-[10px] tracking-[0.4em]">Elite Sports Nutrition by Piyush Jain</p>
+        <a href="https://wa.me/916266403420" class="bg-yellow-400 text-black px-16 py-6 rounded-full font-black text-xs uppercase tracking-[0.3em] inline-block shadow-2xl hover:scale-105 transition-all">Chat with the Beast</a>
+        <div class="mt-24 text-[8px] text-zinc-800 uppercase tracking-widest italic">© 2026 BEAST ROOT | QUALITY WITHOUT COMPROMISE</div>
     </footer>
 
 </body>
