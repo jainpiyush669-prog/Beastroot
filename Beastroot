@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast Root | Premium Sports Nutrition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; }
+        .gold-text { color: #D4AF37; }
+        .gold-bg { background-color: #D4AF37; }
+        .card-bg { background-color: #1a1a1a; }
+        .premium-gradient { background: linear-gradient(145deg, #1a1a1a, #0a0a0a); }
+    </style>
+</head>
+<body>
+
+    <nav class="p-4 border-b border-gray-800 flex justify-between items-center sticky top-0 bg-black z-50">
+        <h1 class="text-2xl font-black tracking-tighter gold-text">BEAST ROOT</h1>
+        <div class="flex gap-4">
+            <button class="text-white">🛒</button>
+            <button class="text-white text-2xl">☰</button>
+        </div>
+    </nav>
+
+    <header class="p-8 text-center premium-gradient">
+        <h2 class="text-4xl font-bold mb-2">BEAST ROOT</h2>
+        <p class="text-gray-400 mb-6">Premium Sports Nutrition | Lab Tested | Trusted Quality</p>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+            <span class="border border-gray-700 px-3 py-1 rounded-full">✓ Lab Tested</span>
+            <span class="border border-gray-700 px-3 py-1 rounded-full">✓ FSSAI Certified</span>
+        </div>
+        <a href="https://wa.me/916266403420" class="mt-8 inline-block gold-bg text-black font-bold px-8 py-3 rounded-md">Order on WhatsApp</a>
+    </header>
+
+    <section class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="card-bg rounded-xl overflow-hidden border border-gray-800">
+            <div class="relative h-64 bg-gray-900 flex items-center justify-center">
+                <span class="absolute top-2 left-2 gold-bg text-black text-xs font-bold px-2 py-1 rounded">BEST SELLER</span>
+                <span class="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded">30% OFF</span>
+                <img src="https://via.placeholder.com/300" alt="Mass Gainer" class="object-contain h-48">
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Beast Root Mass Gainer</h3>
+                <p class="text-gray-400 text-sm mb-4">84g Protein | 1110 Calories per serving</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl font-bold">₹3,079</span>
+                    <span class="text-gray-500 line-through">₹4,399</span>
+                </div>
+                <button class="w-full border border-gold-text gold-text py-2 rounded mb-2 hover:bg-gold-text hover:text-black transition">Add to Cart</button>
+                <button class="w-full gold-bg text-black font-bold py-2 rounded">ORDER NOW</button>
+            </div>
+        </div>
+
+        <div class="card-bg rounded-xl overflow-hidden border border-gray-800">
+            <div class="relative h-64 bg-gray-900 flex items-center justify-center">
+                <span class="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded">30% OFF</span>
+                <img src="https://via.placeholder.com/300" alt="Whey Isolate" class="object-contain h-48">
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Protein Isolate</h3>
+                <p class="text-gray-400 text-sm mb-4">30g Protein | Fast absorbing</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl font-bold">₹3,850</span>
+                    <span class="text-gray-500 line-through">₹5,500</span>
+                </div>
+                <button class="w-full border border-gold-text gold-text py-2 rounded mb-2">Add to Cart</button>
+                <button class="w-full gold-bg text-black font-bold py-2 rounded">ORDER NOW</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="p-8 mt-12 bg-black border-t border-gray-800 text-center">
+        <div class="mb-6">
+            <h4 class="font-bold gold-text mb-2">Get In Touch</h4>
+            <p class="text-gray-400">Owner: Piyush Jain</p>
+            <p class="text-gray-400">WhatsApp: +91 6266403420</p>
+        </div>
+        <div class="text-xs text-gray-600">
+            &copy; 2025 Beast Root. [span_8](start_span)All rights reserved.[span_8](end_span)
+        </div>
+    </footer>
+
+</body>
+</html>
