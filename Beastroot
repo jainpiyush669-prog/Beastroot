@@ -3,136 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEASTROOT | Premium Nutrition Indore</title>
+    <title>Beast Root | Premium Sports Nutrition</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@400;900&display=swap');
-        
-        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        .gold-gradient { 
-            background: linear-gradient(135deg, #d4af37 0%, #fcf6ba 50%, #d4af37 100%); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-        }
-        .bg-gold { background: linear-gradient(135deg, #d4af37 0%, #fcf6ba 50%, #d4af37 100%); color: #000; }
-        .product-card { 
-            background: #080808; 
-            border: 1px solid rgba(212, 175, 55, 0.2); 
-            border-radius: 20px;
-            transition: 0.4s;
-        }
-        .product-card:hover { 
-            border-color: #d4af37; 
-            transform: translateY(-10px);
-            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
-        }
-        .whatsapp-float { 
-            position: fixed; bottom: 30px; right: 30px; 
-            background: #25d366; color: white; 
-            width: 65px; height: 65px; border-radius: 50%; 
-            display: flex; align-items: center; justify-content: center; 
-            font-size: 35px; z-index: 1000; 
-            box-shadow: 0 0 25px rgba(37,211,102,0.4); 
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; }
+        .gold-text { color: #D4AF37; }
+        .gold-bg { background-color: #D4AF37; }
+        .card-bg { background-color: #1a1a1a; }
+        .premium-gradient { background: linear-gradient(145deg, #1a1a1a, #0a0a0a); }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/916266403420?text=Hi Piyush, I want to order supplements from BeastRoot Indore." class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <nav class="flex justify-between items-center p-6 border-b border-white/10 sticky top-0 bg-black/90 backdrop-blur-md z-50">
-        <div class="text-2xl font-black gold-gradient tracking-tighter" style="font-family: 'Syncopate';">BEASTROOT</div>
-        <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hidden md:block">Indore • Premium Quality</div>
+    <nav class="p-4 border-b border-gray-800 flex justify-between items-center sticky top-0 bg-black z-50">
+        <h1 class="text-2xl font-black tracking-tighter gold-text">BEAST ROOT</h1>
+        <div class="flex gap-4">
+            <button class="text-white">🛒</button>
+            <button class="text-white text-2xl">☰</button>
+        </div>
     </nav>
 
-    <section class="h-[85vh] flex flex-col justify-center items-center text-center px-6">
-        <span class="text-[#d4af37] text-xs font-black tracking-[0.5em] mb-4 uppercase">Established 2026</span>
-        <h1 class="text-7xl md:text-9xl font-black mb-6 uppercase tracking-tighter leading-none italic" style="font-family: 'Syncopate';">
-            UNLEASH <br> THE <span class="gold-gradient">BEAST.</span>
-        </h1>
-        <p class="text-zinc-400 max-w-md text-sm md:text-lg mb-12 font-bold uppercase tracking-widest">
-            Indore's No. 1 Supplement Store <br> <span class="text-white">Owner: Piyush Jain</span>
-        </p>
-        <a href="#shop" class="bg-gold px-12 py-5 font-black uppercase text-xs tracking-[0.2em] rounded-full hover:scale-110 transition">Enter Catalog</a>
-    </section>
-
-    <section id="shop" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-black mb-20 uppercase italic border-l-8 border-[#d4af37] pl-8" style="font-family: 'Syncopate';">
-            Premium <span class="gold-gradient text-3xl">Collection</span>
-        </h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            
-            <div class="product-card p-8">
-                <div class="h-64 bg-zinc-900 rounded-xl mb-8 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1593095191071-82b0cde44aa0?w=600" class="w-full h-full object-cover">
-                </div>
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-black uppercase gold-gradient">Extreme Mass Gainer</h3>
-                    <span class="bg-[#d4af37] text-black text-[9px] font-black px-3 py-1 rounded">20% OFF</span>
-                </div>
-                <p class="text-zinc-500 text-[10px] font-bold mb-8 tracking-widest uppercase italic">84G Protein • 1110 Calories</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-3xl font-black">₹2,899</span>
-                    <button class="bg-white text-black px-6 py-3 rounded-full text-[10px] font-black uppercase">Order</button>
-                </div>
-            </div>
-
-            <div class="product-card p-8">
-                <div class="h-64 bg-zinc-900 rounded-xl mb-8 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=600" class="w-full h-full object-cover">
-                </div>
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-black uppercase gold-gradient">Whey Isolate</h3>
-                    <span class="bg-[#d4af37] text-black text-[9px] font-black px-3 py-1 rounded">Best Seller</span>
-                </div>
-                <p class="text-zinc-500 text-[10px] font-bold mb-8 tracking-widest uppercase italic">30G Protein • Zero Sugar</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-3xl font-black">₹4,499</span>
-                    <button class="bg-white text-black px-6 py-3 rounded-full text-[10px] font-black uppercase">Order</button>
-                </div>
-            </div>
-
-            <div class="product-card p-8">
-                <div class="h-64 bg-zinc-900 rounded-xl mb-8 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1579722820308-d74e5719d23e?w=600" class="w-full h-full object-cover">
-                </div>
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-black uppercase gold-gradient">Pre-Workout</h3>
-                    <span class="bg-red-600 text-white text-[9px] font-black px-3 py-1 rounded italic">Danger</span>
-                </div>
-                <p class="text-zinc-500 text-[10px] font-bold mb-8 tracking-widest uppercase italic">10G Citrulline • Energy</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-3xl font-black">₹1,999</span>
-                    <button class="bg-white text-black px-6 py-3 rounded-full text-[10px] font-black uppercase">Order</button>
-                </div>
-            </div>
-
-            <div class="product-card p-8">
-                <div class="h-64 bg-zinc-900 rounded-xl mb-8 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1620980536341-3b4737088b9c?w=600" class="w-full h-full object-cover">
-                </div>
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-black uppercase gold-gradient">Artisanal Choco</h3>
-                    <span class="bg-[#d4af37] text-black text-[9px] font-black px-3 py-1 rounded uppercase">Small Batch</span>
-                </div>
-                <p class="text-zinc-500 text-[10px] font-bold mb-8 tracking-widest uppercase italic">30G Protein per 100g</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-3xl font-black">₹199</span>
-                    <button class="bg-white text-black px-6 py-3 rounded-full text-[10px] font-black uppercase">Order</button>
-                </div>
-            </div>
-
+    <header class="p-8 text-center premium-gradient">
+        <h2 class="text-4xl font-bold mb-2">BEAST ROOT</h2>
+        <p class="text-gray-400 mb-6">Premium Sports Nutrition | Lab Tested | Trusted Quality</p>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+            <span class="border border-gray-700 px-3 py-1 rounded-full">✓ Lab Tested</span>
+            <span class="border border-gray-700 px-3 py-1 rounded-full">✓ FSSAI Certified</span>
         </div>
+        <a href="https://wa.me/916266403420" class="mt-8 inline-block gold-bg text-black font-bold px-8 py-3 rounded-md">Order on WhatsApp</a>
+    </header>
+
+    <section class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="card-bg rounded-xl overflow-hidden border border-gray-800">
+            <div class="relative h-64 bg-gray-900 flex items-center justify-center">
+                <span class="absolute top-2 left-2 gold-bg text-black text-xs font-bold px-2 py-1 rounded">BEST SELLER</span>
+                <span class="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded">30% OFF</span>
+                <img src="https://via.placeholder.com/300" alt="Mass Gainer" class="object-contain h-48">
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Beast Root Mass Gainer</h3>
+                <p class="text-gray-400 text-sm mb-4">84g Protein | 1110 Calories per serving</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl font-bold">₹3,079</span>
+                    <span class="text-gray-500 line-through">₹4,399</span>
+                </div>
+                <button class="w-full border border-gold-text gold-text py-2 rounded mb-2 hover:bg-gold-text hover:text-black transition">Add to Cart</button>
+                <button class="w-full gold-bg text-black font-bold py-2 rounded">ORDER NOW</button>
+            </div>
+        </div>
+
+        <div class="card-bg rounded-xl overflow-hidden border border-gray-800">
+            <div class="relative h-64 bg-gray-900 flex items-center justify-center">
+                <span class="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded">30% OFF</span>
+                <img src="https://via.placeholder.com/300" alt="Whey Isolate" class="object-contain h-48">
+            </div>
+            <div class="p-4">
+                <h3 class="text-xl font-bold">Protein Isolate</h3>
+                <p class="text-gray-400 text-sm mb-4">30g Protein | Fast absorbing</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl font-bold">₹3,850</span>
+                    <span class="text-gray-500 line-through">₹5,500</span>
+                </div>
+                <button class="w-full border border-gold-text gold-text py-2 rounded mb-2">Add to Cart</button>
+                <button class="w-full gold-bg text-black font-bold py-2 rounded">ORDER NOW</button>
+            </div>
+        </div>
+
     </section>
 
-    <footer class="py-24 border-t border-white/10 bg-[#050505] text-center">
-        <h4 class="text-4xl font-black gold-gradient mb-4 uppercase italic" style="font-family: 'Syncopate';">BEASTROOT</h4>
-        <p class="text-zinc-400 font-bold uppercase tracking-[0.3em] text-xs mb-2">Piyush Jain • Indore, MP</p>
-        <p class="text-zinc-700 text-[9px] uppercase tracking-widest">© 2026 BeastRoot Nutrition. All Rights Reserved.</p>
+    <footer class="p-8 mt-12 bg-black border-t border-gray-800 text-center">
+        <div class="mb-6">
+            <h4 class="font-bold gold-text mb-2">Get In Touch</h4>
+            <p class="text-gray-400">Owner: Piyush Jain</p>
+            <p class="text-gray-400">WhatsApp: +91 6266403420</p>
+        </div>
+        <div class="text-xs text-gray-600">
+            &copy; 2025 Beast Root. [span_8](start_span)All rights reserved.[span_8](end_span)
+        </div>
     </footer>
 
 </body>
