@@ -3,131 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beast Root | Premium Sports Nutrition</title>
+    <title>BeastRoot | Premium Nutrition</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #000000; color: #ffffff; font-family: sans-serif; }
+        body { background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; }
         .gold-text { color: #facc15; }
         .gold-bg { background-color: #facc15; }
-        .card-bg { background-color: #0f0f0f; border: 1px solid #1f1f1f; }
-        .btn-outline { border: 1px solid #facc15; color: #facc15; }
-        .discount-tag { background-color: #fde047; color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+        .card-bg { background-color: #0d0d0d; border: 1px solid #1a1a1a; transition: all 0.3s ease; }
+        .card-bg:hover { border-color: #facc15; transform: translateY(-5px); }
+        .discount-tag { background: #facc15; color: #000; font-weight: 800; font-size: 10px; border-radius: 4px; padding: 2px 8px; }
+        .btn-premium { background: linear-gradient(135deg, #facc15 0%, #eab308 100%); color: #000; }
+        .glass-nav { background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid #1a1a1a; }
     </style>
 </head>
 <body>
 
-    <nav class="flex justify-between items-center px-6 py-4 border-b border-zinc-800 sticky top-0 bg-black z-50">
-        <div class="text-xl font-bold tracking-widest">BEAST <span class="gold-text">ROOT</span></div>
-        <div class="hidden md:flex gap-6 text-sm font-medium">
-            <a href="#">Products</a>
-            <a href="#">Certifications</a>
-            <a href="#">Why Us</a>
-            <a href="#">Contact</a>
+    <nav class="glass-nav fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-black tracking-widest">BEAST <span class="gold-text">ROOT</span></div>
+        <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-zinc-400">
+            <a href="#products" class="hover:text-yellow-400">Products</a>
+            <a href="#" class="hover:text-yellow-400">Certifications</a>
+            <a href="#" class="hover:text-yellow-400">Why Us</a>
+            <a href="#" class="hover:text-yellow-400">Contact</a>
         </div>
         <div class="flex items-center gap-4">
-            <i class="fa-solid fa-cart-shopping gold-text"></i>
+            <i class="fa-solid fa-cart-shopping gold-text cursor-pointer"></i>
         </div>
     </nav>
 
-    <section class="text-center py-20 px-6">
-        <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter">BEAST <span class="gold-text">ROOT</span></h1>
-        <p class="text-zinc-400 text-lg mb-8">Premium Sports Nutrition | Lab Tested | Trusted Quality</p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <button class="gold-bg text-black px-8 py-3 rounded-md font-bold uppercase text-sm">Shop Supplements</button>
-            <button class="btn-outline px-8 py-3 rounded-md font-bold uppercase text-sm">Order on WhatsApp</button>
+    <header class="pt-32 pb-20 px-6 text-center">
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-4 uppercase">BEAST <span class="gold-text">ROOT</span></h1>
+        <p class="text-zinc-500 text-sm md:text-lg mb-10 tracking-[0.2em] uppercase">Premium Sports Nutrition | Lab Tested | [span_1](start_span)Trusted Quality[span_1](end_span)</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <button class="btn-premium px-10 py-4 rounded font-bold uppercase text-sm tracking-widest">Shop Supplements</button>
+            <a href="https://wa.me/916266403420" class="border border-yellow-400 text-yellow-400 px-10 py-4 rounded font-bold uppercase text-sm tracking-widest hover:bg-yellow-400 hover:text-black transition">Order on WhatsApp</a>
         </div>
-    </section>
-
-    <section class="grid grid-cols-2 md:grid-cols-3 gap-6 px-6 py-12 max-w-6xl mx-auto border-t border-zinc-800">
-        <div class="text-center p-4">
-            <i class="fa-solid fa-shield-halved gold-text text-3xl mb-3"></i>
-            <p class="text-xs uppercase tracking-widest font-bold">100% Authentic</p>
-        </div>
-        <div class="text-center p-4">
-            <i class="fa-solid fa-flask gold-text text-3xl mb-3"></i>
-            <p class="text-xs uppercase tracking-widest font-bold">Lab Tested</p>
-        </div>
-        <div class="text-center p-4">
-            <i class="fa-solid fa-truck-fast gold-text text-3xl mb-3"></i>
-            <p class="text-xs uppercase tracking-widest font-bold">Fast Delivery</p>
-        </div>
-    </section>
-
-    <section class="px-6 py-12 max-w-7xl mx-auto">
-        <h2 class="text-2xl font-bold mb-10 text-center uppercase tracking-widest">Our Premium Range</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex justify-center gap-12 mt-16 text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+            <span><i class="fa-solid fa-truck gold-text mr-2"></i> Fast Delivery</span>
+            <span><i class="fa-solid fa-flask gold-text mr-2"></i> Lab Tested</span>
+            <span><i class="fa-solid fa-certificate gold-text mr-2"></i> FSSAI Certified</span>
+        </div>
+    </header>
+
+    <section id="products" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-center text-3xl font-black mb-4 uppercase tracking-tighter">Our <span class="gold-text">Premium Range</span></h2>
+        [span_2](start_span)<p class="text-center text-zinc-500 text-sm mb-16 uppercase tracking-widest">Lab-tested supplements for your fitness journey[span_2](end_span)</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
-            <div class="card-bg rounded-xl p-4 flex flex-col relative">
-                <div class="absolute top-4 right-4 discount-tag">30% OFF</div>
-                <img src="https://images.unsplash.com/photo-1593095191071-82b0cde44aa0?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
-                <h3 class="font-bold text-lg mb-1">Beast Root Mass Gainer</h3>
-                <p class="text-zinc-500 text-xs mb-4 line-clamp-2">84g protein and 1110 calories per serving.</p>
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[9px] bg-zinc-800 px-2 py-1 rounded text-yellow-400 font-bold uppercase">Best Seller</span>
+                    <span class="discount-tag">30% OFF</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1593095191071-82b0cde44aa0?w=400" class="w-full h-48 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Beast Root Mass Gainer</h3>
+                [span_3](start_span)<p class="text-zinc-500 text-xs mb-6 leading-relaxed">84g protein and 1110 calories per serving.[span_3](end_span)</p>
                 <div class="mt-auto">
-                    <div class="text-2xl font-bold gold-text mb-4">₹3,079</div>
-                    <div class="flex gap-2">
-                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
-                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
+                    <div class="text-2xl font-black gold-text mb-4">₹3,079 <span class="text-zinc-600 text-sm line-through font-normal">₹4,399</span></div>
+                    <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase tracking-widest hover:bg-yellow-400 transition">Add to Cart</button>
+                    <a href="https://wa.me/916266403420?text=I want to buy Mass Gainer" class="block text-center mt-2 py-3 rounded border border-zinc-800 text-yellow-400 text-xs font-bold uppercase"><i class="fa-brands fa-whatsapp mr-2"></i> Order</a>
                 </div>
             </div>
 
-            <div class="card-bg rounded-xl p-4 flex flex-col relative">
-                <div class="absolute top-4 right-4 discount-tag">30% OFF</div>
-                <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
-                <h3 class="font-bold text-lg mb-1">Protein Isolate</h3>
-                <p class="text-zinc-500 text-xs mb-4">30g protein per serving. Pure performance.</p>
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[9px] bg-zinc-800 px-2 py-1 rounded text-yellow-400 font-bold uppercase">Best Seller</span>
+                    <span class="discount-tag">30% OFF</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=400" class="w-full h-48 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Protein Isolate</h3>
+                <p class="text-zinc-500 text-xs mb-6 leading-relaxed">30g protein per serving. [span_4](start_span)Pure, fast-absorbing.[span_4](end_span)</p>
                 <div class="mt-auto">
-                    <div class="text-2xl font-bold gold-text mb-4">₹3,850</div>
-                    <div class="flex gap-2">
-                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
-                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
+                    <div class="text-2xl font-black gold-text mb-4">₹3,850 <span class="text-zinc-600 text-sm line-through font-normal">₹5,500</span></div>
+                    <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase tracking-widest hover:bg-yellow-400 transition">Add to Cart</button>
+                    <a href="https://wa.me/916266403420?text=I want to buy Isolate" class="block text-center mt-2 py-3 rounded border border-zinc-800 text-yellow-400 text-xs font-bold uppercase"><i class="fa-brands fa-whatsapp mr-2"></i> Order</a>
                 </div>
             </div>
 
-            <div class="card-bg rounded-xl p-4 flex flex-col relative">
-                <div class="absolute top-4 right-4 discount-tag">60% OFF</div>
-                <img src="https://images.unsplash.com/photo-1579722820308-d74e5719d23e?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
-                <h3 class="font-bold text-lg mb-1">Beast Root Creatine</h3>
-                <p class="text-zinc-500 text-xs mb-4">Pure monohydrate for explosive power.</p>
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-[9px] bg-zinc-800 px-2 py-1 rounded text-yellow-400 font-bold uppercase">Best Seller</span>
+                    <span class="discount-tag">60% OFF</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1579722820308-d74e5719d23e?w=400" class="w-full h-48 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2 text-yellow-400">HEAVY CREATINE</h3>
+                [span_5](start_span)<p class="text-zinc-500 text-xs mb-6 leading-relaxed">Pure monohydrate for explosive power.[span_5](end_span)</p>
                 <div class="mt-auto">
-                    <div class="text-2xl font-bold gold-text mb-4">₹600</div>
-                    <div class="flex gap-2">
-                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
-                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
+                    <div class="text-2xl font-black gold-text mb-4">₹600 <span class="text-zinc-600 text-sm line-through font-normal">₹1,500</span></div>
+                    <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase tracking-widest hover:bg-yellow-400 transition">Add to Cart</button>
+                    <a href="https://wa.me/916266403420?text=I want to buy Creatine" class="block text-center mt-2 py-3 rounded border border-zinc-800 text-yellow-400 text-xs font-bold uppercase"><i class="fa-brands fa-whatsapp mr-2"></i> Order</a>
                 </div>
             </div>
 
-            <div class="card-bg rounded-xl p-4 flex flex-col relative">
-                <div class="absolute top-4 right-4 discount-tag">30% OFF</div>
-                <img src="https://images.unsplash.com/photo-1620980536341-3b4737088b9c?w=400" class="w-full h-48 object-contain mb-4 rounded-lg">
-                <h3 class="font-bold text-lg mb-1">Beast Root Pre-Workout</h3>
-                <p class="text-zinc-500 text-xs mb-4">10g Citrulline for maximum pump.</p>
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-between items-start mb-4">
+                    <span></span>
+                    <span class="discount-tag">60% OFF</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400" class="w-full h-48 object-contain mb-6">
+                <h3 class="font-bold text-lg mb-2">Multivitamin</h3>
+                [span_6](start_span)<p class="text-zinc-500 text-xs mb-6 leading-relaxed">Complete daily formula with essential vitamins.[span_6](end_span)</p>
                 <div class="mt-auto">
-                    <div class="text-2xl font-bold gold-text mb-4">₹2,100</div>
-                    <div class="flex gap-2">
-                        <button class="flex-1 bg-zinc-800 text-white py-2 rounded font-bold text-sm">Add to Cart</button>
-                        <a href="https://wa.me/916266403420" class="gold-bg text-black p-2 rounded px-4"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
+                    <div class="text-2xl font-black gold-text mb-4">₹320 <span class="text-zinc-600 text-sm line-through font-normal">₹800</span></div>
+                    <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase tracking-widest hover:bg-yellow-400 transition">Add to Cart</button>
+                    <a href="https://wa.me/916266403420?text=I want to buy Multivitamin" class="block text-center mt-2 py-3 rounded border border-zinc-800 text-yellow-400 text-xs font-bold uppercase"><i class="fa-brands fa-whatsapp mr-2"></i> Order</a>
                 </div>
             </div>
 
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-end mb-4"><span class="discount-tag">60% OFF</span></div>
+                <h3 class="font-bold text-lg mb-2">Omega 3</h3>
+                [span_7](start_span)<p class="text-zinc-500 text-xs mb-6">High potency fish oil for heart health.[span_7](end_span)</p>
+                <div class="text-2xl font-black gold-text mb-4">₹320 <span class="text-zinc-600 text-sm line-through font-normal">₹800</span></div>
+                <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase">Add to Cart</button>
+            </div>
+
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-end mb-4"><span class="discount-tag">30% OFF</span></div>
+                <h3 class="font-bold text-lg mb-2">Protein Oats</h3>
+                [span_8](start_span)<p class="text-zinc-500 text-xs mb-6">High fiber energy packed oats.[span_8](end_span)</p>
+                <div class="text-2xl font-black gold-text mb-4">₹420 <span class="text-zinc-600 text-sm line-through font-normal">₹600</span></div>
+                <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase">Add to Cart</button>
+            </div>
+
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-end mb-4"><span class="discount-tag">30% OFF</span></div>
+                <h3 class="font-bold text-lg mb-2">Protein Muesli</h3>
+                [span_9](start_span)<p class="text-zinc-500 text-xs mb-6">Crunchy whole grain muesli.[span_9](end_span)</p>
+                <div class="text-2xl font-black gold-text mb-4">₹420 <span class="text-zinc-600 text-sm line-through font-normal">₹600</span></div>
+                <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase">Add to Cart</button>
+            </div>
+
+            <div class="card-bg p-5 rounded-2xl flex flex-col">
+                <div class="flex justify-end mb-4"><span class="discount-tag">30% OFF</span></div>
+                <h3 class="font-bold text-lg mb-2">Pre-Workout</h3>
+                [span_10](start_span)<p class="text-zinc-500 text-xs mb-6">10g citrulline for maximum pump.[span_10](end_span)</p>
+                <div class="text-2xl font-black gold-text mb-4">₹2,100 <span class="text-zinc-600 text-sm line-through font-normal">₹3,000</span></div>
+                <button class="w-full bg-white text-black py-3 rounded font-bold text-xs uppercase">Add to Cart</button>
+            </div>
+
+            </div>
+    </section>
+
+    <section class="py-20 bg-zinc-950 px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
+            <div class="card-bg p-10 rounded-3xl text-center">
+                <i class="fa-solid fa-medal gold-text text-4xl mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">FSSAI Certified</h3>
+                [span_11](start_span)<p class="text-zinc-500 text-sm mb-8">Approved by Food Safety Standards of India.[span_11](end_span)</p>
+                <button class="btn-premium px-6 py-3 rounded text-xs font-bold uppercase">Download Report</button>
+            </div>
+            <div class="card-bg p-10 rounded-3xl text-center">
+                <i class="fa-solid fa-shield-check gold-text text-4xl mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">ISO Certified</h3>
+                [span_12](start_span)<p class="text-zinc-500 text-sm mb-8">International quality management standards.[span_12](end_span)</p>
+                <button class="btn-premium px-6 py-3 rounded text-xs font-bold uppercase">Download Certificate</button>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-zinc-900/50 py-16 px-6 text-center">
-        <h2 class="text-2xl font-bold mb-4 uppercase">Get In Touch</h2>
-        <p class="text-zinc-400 mb-8">Chat with us for instant order placement and support.</p>
-        <a href="https://wa.me/916266403420" class="gold-bg text-black px-10 py-4 rounded-full font-bold inline-block">
-            <i class="fa-brands fa-whatsapp mr-2"></i> Chat on WhatsApp
+    <footer class="py-20 px-6 text-center border-t border-zinc-900">
+        <h2 class="text-4xl font-black mb-8 tracking-tighter uppercase">Get In <span class="gold-text">Touch</span></h2>
+        <a href="https://wa.me/916266403420" class="btn-premium px-12 py-5 rounded-full font-bold text-sm tracking-widest uppercase inline-block mb-12">
+            [span_13](start_span)<i class="fa-brands fa-whatsapp mr-2"></i> Chat on WhatsApp[span_13](end_span)
         </a>
-        <div class="mt-16 pt-8 border-t border-zinc-800 text-zinc-500 text-xs uppercase tracking-widest">
-            <p class="mb-2">Owner: Piyush Jain</p>
-            <p>WhatsApp: +91 6266403420</p>
-            <p class="mt-4">© 2026 BeastRoot | All Rights Reserved</p>
+        <div class="text-[10px] text-zinc-600 font-bold tracking-[0.3em] uppercase">
+            [span_14](start_span)<p class="mb-2">Owner: Piyush Jain • Indore, MP[span_14](end_span)</p>
+            [span_15](start_span)<p>WhatsApp: +91 6266403420[span_15](end_span)</p>
+            <p class="mt-8">© 2026 BeastRoot | All Rights Reserved</p>
         </div>
     </footer>
 
